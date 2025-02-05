@@ -1,0 +1,175 @@
+/* * {
+    outline: 1px solid black;
+} */
+
+/* to reset sizing to border-box */
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+body {
+    font-family: "Roboto", serif;
+    margin: 0;
+}
+
+.dark {
+    background-color: #1F2937;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4em;
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    color: #E5E7EB;
+    display: flex;
+    gap: 1.5em;
+}
+
+li {
+    text-align: center;
+}
+
+.hero {
+    max-width: 1000px;
+    margin: auto;
+    padding: 100px 10px 100px 10px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* I need to deal with this image somehow so it isn't squeezed */
+.hero img {
+    flex: 0 1 auto;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.hero button {
+    color: white;
+    background-color: #3882F6;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 25px;
+    font-size: 18px;
+}
+
+/* the random items go here */
+
+h2 {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+    margin: 0;
+    text-align: center;
+}
+
+.quote {
+    background-color: #E5E7EB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* the quote text should look vertically centered */
+.quote-text {
+    max-width: 800px;
+    margin: 80px 0 50px 0;
+}
+
+.quote-content {
+    font-size: 36px;
+    font-weight: 200;
+    color: #1F2937;
+    margin: 0 0 20px 0;
+}
+
+.quote-name {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: right;
+    color: #1F2937
+}
+
+.signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blue {
+    background-color: #3882F6;
+    border-radius: 10px;
+    padding: 30px 70px;
+    color: white;
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+    align-items: center;
+    margin: 100px 0;
+    width: 1000px;
+}
+
+.blue p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.bold {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+button {
+    color: white;
+    background-color: #3882F6;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 5px 25px;
+    font-size: 18px;
+}
+
+footer {
+    background-color: #1F2937;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #E5E7EB;
+    padding: 2em 0;
+}
