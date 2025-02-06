@@ -61,18 +61,15 @@ li {
     gap: 30px;
 }
 
-/* I need to deal with this image somehow so it isn't squeezed 
-.hero img {
-    flex: 0 1 auto;
-} */
-
 .hero-text {
-    flex: 1;
+    flex: 1 1 auto;
 }
 
-.hero-img {
-    flex: 1;
-    background-color: beige;
+.hero img {
+    flex: 1 1 auto;
+    border-radius: 10px;
+    object-fit: cover;
+    max-width: 485px;
 }
 
 .hero h1 {
@@ -101,7 +98,7 @@ h2 {
     font-size: 36px;
     color: #1F2937;
     font-weight: 900;
-    margin: 1em 0;
+    margin: 1.5em 0;
     text-align: center;
 }
 
@@ -119,9 +116,10 @@ h2 {
     flex: 0 1 auto;
 }
 
-.project-img {
+.project img {
     height: 150px;
     width: 150px;
+    object-fit: cover;
     border: 3px solid #3882F6;
     border-radius: 10px;
 }
@@ -144,7 +142,7 @@ h2 {
 /* the quote text should look vertically centered */
 .quote-text {
     max-width: 800px;
-    margin: 80px 0 50px 0;
+    margin: 90px 0 50px 0;
     padding: 0 20px;
 }
 
@@ -159,7 +157,8 @@ h2 {
     font-size: 24px;
     font-weight: bold;
     text-align: right;
-    color: #1F2937
+    color: #1F2937;
+    margin: 0;
 }
 
 .signup {
@@ -207,4 +206,5 @@ footer {
     align-items: center;
     color: #E5E7EB;
     padding: 2em 0;
+    text-align: center;
 }
